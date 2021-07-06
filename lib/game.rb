@@ -1,8 +1,10 @@
 class Game
   attr_reader :output
   attr_accessor :phase
+  attr_accessor :ui
 
-  def initialize
+  def initialize(ui)
+    @ui = ui
     @output = []
     @phase = :start
   end
